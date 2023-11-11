@@ -5,11 +5,11 @@ package top_interview_questions
  */
 
 fun main() {
-    println(moveZeroes(intArrayOf(0, 1, 0, 3, 12)))
-    println(moveZeroes(intArrayOf(0)))
+    println(moveZeroes(intArrayOf(0, 1, 0, 3, 12)).toList())
+    println(moveZeroes(intArrayOf(0)).toList())
 }
 
-fun moveZeroes(nums: IntArray) {
+fun moveZeroes(nums: IntArray): IntArray {
     val nonZero = mutableListOf<Int>()
     nums.forEach {
         if (it != 0) {
@@ -24,4 +24,5 @@ fun moveZeroes(nums: IntArray) {
     nonZero.forEachIndexed { index, i ->
         nums[index] = i
     }
+    return nums
 }
