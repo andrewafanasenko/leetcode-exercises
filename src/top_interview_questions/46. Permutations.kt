@@ -7,8 +7,8 @@ import java.util.LinkedList
  */
 
 fun main() {
-    println(permute(intArrayOf(1,2,3)))
-    println(permute(intArrayOf(0,1)))
+    println(permute(intArrayOf(1, 2, 3)))
+    println(permute(intArrayOf(0, 1)))
     println(permute(intArrayOf(1)))
 }
 
