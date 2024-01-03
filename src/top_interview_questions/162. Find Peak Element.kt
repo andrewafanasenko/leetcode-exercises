@@ -17,9 +17,9 @@ fun findPeakElement(nums: IntArray): Int {
             resultIndex = index
             resultValue = nums[index]
         } else {
-            val absoluteValue = nums[index]
-            if (absoluteValue > resultValue) {
-                resultValue = absoluteValue
+            val value = nums[index]
+            if (value > resultValue) {
+                resultValue = value
                 resultIndex = index
             }
         }
